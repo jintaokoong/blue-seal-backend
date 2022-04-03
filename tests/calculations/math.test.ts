@@ -1,4 +1,4 @@
-import math from '../../src/calculations/math';
+import math from 'calculations/math';
 
 describe('calculate', function () {
   it('add', function () {

@@ -7,7 +7,7 @@
     "clean": "rimraf dist/",
     "build": "npm run clean && tsc",
     "serve": "ts-node-dev src/index.ts",
-    "test": "ts-node node_modules/jasmine/bin/jasmine --config=jasmine.json",
+    "test": "ts-node -r tsconfig-paths/register node_modules/jasmine/bin/jasmine --config=jasmine.json",
     "coverage": "nyc -r text -e .ts -x \"tests/*.test.ts\" npm run test"
   },
   "author": "",
@@ -21,6 +21,7 @@
     "rimraf": "^3.0.2",
     "ts-node": "^10.7.0",
     "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.14.1",
     "typescript": "^4.6.3"
   }
 }
