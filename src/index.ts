@@ -1,5 +1,7 @@
 import app from 'configurations/koa/index';
 
-app.listen(3000, () => {
-  console.log('serving');
+const PORT = 3000;
+
+app.listen(PORT, () => {
+  console.log(`listening on port ${PORT}`);
 });
